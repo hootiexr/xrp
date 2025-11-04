@@ -16,25 +16,56 @@
       min-height: 100vh;
     }
 
-    /* Header */
+    /* Header (fixed di atas) */
     header {
-      position: absolute;
-      top: 20px;
-      left: 40px;
-      text-align: left;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 20px 40px;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(8px);
+      z-index: 100;
     }
 
-    header h1 {
+    /* Logo kiri */
+    .logo-area {
+      text-align: left;
+      line-height: 1.2;
+    }
+
+    .logo-area h1 {
       font-size: 32px;
       margin: 0;
       font-weight: 700;
       letter-spacing: 2px;
     }
 
-    header p {
+    .logo-area p {
       font-size: 14px;
       margin: 0;
       color: #ccc;
+    }
+
+    /* Sosial kanan atas */
+    .socials {
+      display: flex;
+      gap: 25px;
+    }
+
+    .socials a img {
+      width: 32px;
+      height: 32px;
+      filter: brightness(0) invert(1);
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .socials a img:hover {
+      transform: scale(1.15);
+      opacity: 0.8;
     }
 
     /* Main content */
@@ -44,7 +75,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding-top: 80px;
+      padding-top: 160px; /* kasih jarak biar gak ketutupan header */
     }
 
     .buttons {
@@ -80,26 +111,6 @@
       margin-top: 20px;
     }
 
-    /* Social icons */
-    .socials {
-      margin-top: 40px;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-    }
-
-    .socials a img {
-      width: 40px;
-      height: 40px;
-      filter: brightness(0) invert(1);
-      transition: transform 0.3s ease, opacity 0.3s ease;
-    }
-
-    .socials a img:hover {
-      transform: scale(1.15);
-      opacity: 0.8;
-    }
-
     /* Footer */
     footer {
       padding: 20px 40px;
@@ -111,31 +122,48 @@
       margin: 4px 0;
     }
 
+    /* Responsif */
     @media (max-width: 768px) {
       header {
-        left: 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
       }
-      header h1 {
-        font-size: 26px;
+
+      .socials {
+        margin-top: 10px;
       }
+
       .btn {
         font-size: 16px;
         padding: 10px 22px;
       }
+
       .main-gif {
         max-width: 90%;
       }
+
       .socials a img {
-        width: 32px;
-        height: 32px;
+        width: 28px;
+        height: 28px;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>HOOTIE</h1>
-    <p>ON XRP LEDGER</p>
+    <!-- Kiri atas -->
+    <div class="logo-area">
+      <h1>HOOTIE</h1>
+      <p>ON XRP LEDGER</p>
+    </div>
+
+    <!-- Kanan atas -->
+    <div class="socials">
+      <a href="https://x.com/hootie" target="_blank"><img src="x-icon.png" alt="X" /></a>
+      <a href="https://t.me/hootie" target="_blank"><img src="telegram-icon.png" alt="Telegram" /></a>
+      <a href="https://dexscreener.com/xrp" target="_blank"><img src="dexscreener-icon.png" alt="Dexscreener" /></a>
+    </div>
   </header>
 
   <main>
@@ -144,12 +172,8 @@
       <a href="https://link-ke-nft-hootie.com" target="_blank" class="btn">NFTs</a>
     </div>
 
+    <!-- Ganti dengan file GIF kamu -->
     <img src="hootie.gif" alt="HOOTIE Main GIF" class="main-gif" />
-
-    <div class="socials">
-      <a href="https://x.com/hootie" target="_blank"><img src="x-icon.png" alt="X" /></a>
-      <a href="https://t.me/hootie" target="_blank"><img src="telegram-icon.png" alt="Telegram" /></a>
-    </div>
   </main>
 
   <footer>
