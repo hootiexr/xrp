@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HOOTIE | ON XRP LEDGER</title>
+
+  <!-- Tambah font modern -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
@@ -35,10 +39,11 @@
     .logo-area {
       text-align: left;
       line-height: 1.2;
+      font-family: 'Orbitron', sans-serif;
     }
 
     .logo-area h1 {
-      font-size: 32px;
+      font-size: 36px;
       margin: 0;
       font-weight: 700;
       letter-spacing: 2px;
@@ -48,6 +53,7 @@
       font-size: 14px;
       margin: 0;
       color: #ccc;
+      letter-spacing: 1px;
     }
 
     /* Sosial kanan atas */
@@ -75,11 +81,11 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding-top: 160px; /* kasih jarak biar gak ketutupan header */
+      padding-top: 120px; /* dirapatkan dari sebelumnya 160px */
     }
 
     .buttons {
-      margin-top: 60px;
+      margin-top: 40px; /* dirapatkan */
       margin-bottom: 40px;
     }
 
@@ -87,26 +93,29 @@
       background: #111;
       color: #fff;
       border: 1px solid #444;
-      padding: 12px 28px;
+      padding: 16px 40px; /* lebih besar */
       margin: 10px;
-      font-size: 18px;
+      font-size: 22px; /* ukuran teks tombol diperbesar */
       letter-spacing: 1px;
-      border-radius: 30px;
+      border-radius: 35px;
       cursor: pointer;
       transition: all 0.3s ease;
       text-decoration: none;
       display: inline-block;
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 600;
     }
 
     .btn:hover {
       background: #fff;
       color: #000;
-      transform: scale(1.05);
+      transform: scale(1.08);
+      box-shadow: 0 0 15px rgba(255,255,255,0.3);
     }
 
     .main-gif {
       max-width: 600px;
-      width: 80%;
+      width: 85%;
       border-radius: 12px;
       margin-top: 20px;
     }
@@ -116,6 +125,7 @@
       padding: 20px 40px;
       color: #777;
       font-size: 13px;
+      font-family: 'Poppins', sans-serif;
     }
 
     footer p {
@@ -128,15 +138,25 @@
         flex-direction: column;
         align-items: center;
         gap: 10px;
+        padding: 15px 20px;
       }
 
-      .socials {
-        margin-top: 10px;
+      .logo-area h1 {
+        font-size: 28px;
+      }
+
+      .logo-area p {
+        font-size: 12px;
       }
 
       .btn {
-        font-size: 16px;
-        padding: 10px 22px;
+        font-size: 20px;
+        padding: 14px 36px;
+        margin: 8px;
+      }
+
+      main {
+        padding-top: 100px; /* lebih rapat di hp */
       }
 
       .main-gif {
@@ -152,27 +172,24 @@
 </head>
 <body>
   <header>
-    <!-- Kiri atas -->
     <div class="logo-area">
       <h1>HOOTIE</h1>
       <p>ON XRP LEDGER</p>
     </div>
 
-    <!-- Kanan atas -->
     <div class="socials">
-      <a href="https://x.com/HOOTIEonXRPL" target="_blank"><img src="x-icon.png" alt="X" /></a>
-      <a href="https://t.me/HOOTIEonXRPL" target="_blank"><img src="telegram-icon.png" alt="Telegram" /></a>
-      <a href="https://dexscreener.com/xrpl" target="_blank"><img src="dexscreener-icon.png" alt="Dexscreener" /></a>
+      <a href="https://x.com/hootie" target="_blank"><img src="x-icon.png" alt="X" /></a>
+      <a href="https://t.me/hootie" target="_blank"><img src="telegram-icon.png" alt="Telegram" /></a>
+      <a href="https://dexscreener.com/xrp" target="_blank"><img src="dexscreener-icon.png" alt="Dexscreener" /></a>
     </div>
   </header>
 
   <main>
     <div class="buttons">
-      <a href="https://firstledger.net/" target="_blank" class="btn">$HOOTIE</a>
-      <a href="https://xrp.cafe/" target="_blank" class="btn">NFTs</a>
+      <a href="https://link-ke-token-hootie.com" target="_blank" class="btn">$HOOTIE</a>
+      <a href="https://link-ke-nft-hootie.com" target="_blank" class="btn">NFTs</a>
     </div>
 
-    <!-- Ganti dengan file GIF kamu -->
     <img src="hootie.gif" alt="HOOTIE Main GIF" class="main-gif" />
   </main>
 
@@ -182,4 +199,3 @@
   </footer>
 </body>
 </html>
-
