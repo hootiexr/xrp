@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HOOTIE | ON XRP LEDGER</title>
 
-  <!-- Tambah font modern -->
+  <!-- Font futuristik -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
@@ -20,7 +20,7 @@
       min-height: 100vh;
     }
 
-    /* Header (fixed di atas) */
+    /* Header (fixed) */
     header {
       position: fixed;
       top: 0;
@@ -28,14 +28,14 @@
       right: 0;
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
-      padding: 20px 40px;
+      align-items: center;
+      padding: 20px 50px;
       background: rgba(0, 0, 0, 0.85);
       backdrop-filter: blur(8px);
       z-index: 100;
     }
 
-    /* Logo kiri */
+    /* Kiri atas */
     .logo-area {
       text-align: left;
       line-height: 1.2;
@@ -50,21 +50,22 @@
     }
 
     .logo-area p {
-      font-size: 14px;
-      margin: 0;
+      font-size: 15px;
+      margin: 2px 0 0;
       color: #ccc;
       letter-spacing: 1px;
     }
 
-    /* Sosial kanan atas */
+    /* Kanan atas - ikon sosial */
     .socials {
       display: flex;
-      gap: 25px;
+      align-items: center;
+      gap: 30px;
     }
 
     .socials a img {
-      width: 32px;
-      height: 32px;
+      width: 42px; /* diperbesar */
+      height: 42px; /* diperbesar */
       filter: brightness(0) invert(1);
       transition: transform 0.3s ease, opacity 0.3s ease;
     }
@@ -81,11 +82,11 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding-top: 120px; /* dirapatkan dari sebelumnya 160px */
+      padding-top: 120px;
     }
 
     .buttons {
-      margin-top: 40px; /* dirapatkan */
+      margin-top: 40px;
       margin-bottom: 40px;
     }
 
@@ -93,9 +94,9 @@
       background: #111;
       color: #fff;
       border: 1px solid #444;
-      padding: 16px 40px; /* lebih besar */
+      padding: 16px 40px;
       margin: 10px;
-      font-size: 22px; /* ukuran teks tombol diperbesar */
+      font-size: 22px;
       letter-spacing: 1px;
       border-radius: 35px;
       cursor: pointer;
@@ -149,23 +150,26 @@
         font-size: 12px;
       }
 
+      .socials {
+        gap: 20px;
+      }
+
+      .socials a img {
+        width: 34px;
+        height: 34px;
+      }
+
       .btn {
         font-size: 20px;
         padding: 14px 36px;
-        margin: 8px;
       }
 
       main {
-        padding-top: 100px; /* lebih rapat di hp */
+        padding-top: 100px;
       }
 
       .main-gif {
         max-width: 90%;
-      }
-
-      .socials a img {
-        width: 28px;
-        height: 28px;
       }
     }
   </style>
@@ -199,4 +203,3 @@
   </footer>
 </body>
 </html>
-
